@@ -7,7 +7,7 @@ phases:
       - curl -o /usr/local/bin/aws-iam-authenticator https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/aws-iam-authenticator
       - chmod 755 /usr/local/bin/aws-iam-authenticator
       - echo Update kubeconfig
-      - aws eks --region ap-southeast-2 update-kubeconfig --name terraform-eks-dev
+      - aws eks --region $REGION update-kubeconfig --name $EKS_CLUSTER_NAME
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
   build:
     commands:
