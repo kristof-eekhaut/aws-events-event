@@ -14,8 +14,8 @@ phases:
       - echo Create namespace
       - kubectl create ns $EKS_NAMESPACE || true
       - kubectl config set-context $(kubectl config current-context) --namespace=$EKS_NAMESPACE
-      - echo Deploy image $ECR_REPO:$COMMIT_HASH
-      - sed -i.'' "s/IMAGE_NAME:IMAGE_TAG/$ECR_REPO:$COMMIT_HASH/g" deploy/deployment.yml
+      - echo Deploy image $REPO_ECR:$COMMIT_HASH
+      - sed -i.'' "s/IMAGE_NAME:IMAGE_TAG/$REPO_ECR:$COMMIT_HASH/g" deploy/deployment.yml
       - cat deploy/deployment.yml
       - cat deploy/service.yml
       - kubectl apply -f deploy/deployment.yml -f deploy/service.yml -v
