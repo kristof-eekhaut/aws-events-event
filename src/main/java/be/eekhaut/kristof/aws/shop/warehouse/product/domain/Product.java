@@ -1,6 +1,6 @@
 package be.eekhaut.kristof.aws.shop.warehouse.product.domain;
 
-import be.eekhaut.kristof.aws.shop.warehouse.product.application.api.ProductView;
+import be.eekhaut.kristof.aws.shop.warehouse.product.application.api.view.ProductView;
 
 import static java.util.Objects.requireNonNull;
 

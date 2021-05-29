@@ -1,4 +1,4 @@
-package be.eekhaut.kristof.aws.shop.warehouse.product.application.api;
+package be.eekhaut.kristof.aws.shop.warehouse.product.application.api.view;
 
 import be.eekhaut.kristof.aws.shop.warehouse.product.domain.ProductId;
 

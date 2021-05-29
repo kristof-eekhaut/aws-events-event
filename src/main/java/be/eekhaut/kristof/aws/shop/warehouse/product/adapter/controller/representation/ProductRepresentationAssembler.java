@@ -1,6 +1,6 @@
-package be.eekhaut.kristof.aws.shop.warehouse.product.adapter.controller;
+package be.eekhaut.kristof.aws.shop.warehouse.product.adapter.controller.representation;
 
-import be.eekhaut.kristof.aws.shop.warehouse.product.application.api.ProductView;
+import be.eekhaut.kristof.aws.shop.warehouse.product.application.api.view.ProductView;
 import org.springframework.hateoas.server.RepresentationModelAssembler;
 import org.springframework.stereotype.Component;
 

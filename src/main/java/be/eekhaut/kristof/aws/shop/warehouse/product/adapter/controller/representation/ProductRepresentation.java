@@ -1,7 +1,9 @@
-package be.eekhaut.kristof.aws.shop.warehouse.product.adapter.controller;
+package be.eekhaut.kristof.aws.shop.warehouse.product.adapter.controller.representation;
 
 import org.springframework.hateoas.RepresentationModel;
+import org.springframework.hateoas.server.core.Relation;
 
+@Relation(value = "product", collectionRelation = "products")
 public class ProductRepresentation extends RepresentationModel<ProductRepresentation> {
 
     private final String id;
