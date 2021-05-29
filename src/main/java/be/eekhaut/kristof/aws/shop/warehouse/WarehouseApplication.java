@@ -1,13 +1,13 @@
-package be.eekhaut.kristof.aws.events.event;
+package be.eekhaut.kristof.aws.shop.warehouse;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EventApplication {
+public class WarehouseApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EventApplication.class, args);
+        SpringApplication.run(WarehouseApplication.class, args);
     }
 
 }

@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: events-service-deployment
+  name: warehouse-service-deployment
   labels:
-    app: events-service
+    app: warehouse-service
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: events-service
+      app: warehouse-service
   template:
     metadata:
       labels:
-        app: events-service
+        app: warehouse-service
     spec:
       containers:
-        - name: events-service
+        - name: warehouse-service
           image: IMAGE_NAME:IMAGE_TAG
           ports:
             - containerPort: 8080

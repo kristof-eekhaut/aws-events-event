@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: events-service
+  name: warehouse-service
 spec:
   selector:
-    app: events-service
+    app: warehouse-service
   ports:
     - protocol: TCP
       port: 8080

@@ -8,11 +8,11 @@
         <version>2.5.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>be.eekhaut.kristof.aws.events</groupId>
-    <artifactId>event</artifactId>
+    <groupId>be.eekhaut.kristof.aws.shop</groupId>
+    <artifactId>warehouse</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>event</name>
-    <description>Demo project for Spring Boot</description>
+    <name>warehouse</name>
+    <description>Warehouse application with product catalog</description>
     <properties>
         <java.version>11</java.version>
     </properties>
