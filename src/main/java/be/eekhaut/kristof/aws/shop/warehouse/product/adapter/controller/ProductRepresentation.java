@@ -1,12 +1,14 @@
 package be.eekhaut.kristof.aws.shop.warehouse.product.adapter.controller;
 
-public class ProductResource {
+import org.springframework.hateoas.RepresentationModel;
+
+public class ProductRepresentation extends RepresentationModel<ProductRepresentation> {
 
     private final String id;
     private final String name;
     private final int itemsInStock;
 
-    private ProductResource(Builder builder) {
+    private ProductRepresentation(Builder builder) {
         id = builder.id;
         name = builder.name;
         itemsInStock = builder.itemsInStock;
@@ -51,8 +53,8 @@ public class ProductResource {
             return this;
         }
 
-        public ProductResource build() {
-            return new ProductResource(this);
+        public ProductRepresentation build() {
+            return new ProductRepresentation(this);
         }
     }
 }
